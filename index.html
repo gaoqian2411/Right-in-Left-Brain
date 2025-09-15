@@ -394,52 +394,30 @@
 
 
 
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- TODO: Replace with your YouTube video ID -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End youtube video -->
-
 
 <!-- Video carousel -->
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
+      <h2 class="title is-3">Video</h2>
+
       <div id="results-carousel" class="carousel results-carousel">
+        <!-- item 1 -->
         <div class="item item-video1">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video1" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
+          <video id="video1" controls muted loop playsinline preload="metadata" style="width:100%;height:auto;">
             <source src="static/videos/carousel1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
           </video>
         </div>
+
+        <!-- item 2 -->
         <div class="item item-video2">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video2" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video3" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4" type="video/mp4">
+          <video id="video2" controls muted loop playsinline preload="metadata" style="width:100%;height:auto;">
+            <!-- 方案A：直接用中文文件名（页面是 UTF-8 时通常可用） -->
+            <source src="static/videos/倒牛奶.mp4" type="video/mp4">
+            <!-- 如果你的浏览器或某些平台不认中文文件名，可改成下面的 URL 编码或把文件重命名为 pour_milk.mp4 -->
+            <!-- <source src="static/videos/%E5%80%92%E7%89%9B%E5%A5%B6.mp4" type="video/mp4"> -->
+            Your browser does not support the video tag.
           </video>
         </div>
       </div>
@@ -447,6 +425,7 @@
   </div>
 </section>
 <!-- End video carousel -->
+
 
 
 
